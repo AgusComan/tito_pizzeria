@@ -18,6 +18,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
+  height: 13vh;
 }
 
 header .encabezado_logo {
@@ -29,25 +31,27 @@ header .encabezado_logo {
 header .encabezado_items {
   color: wheat;
   margin-right: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 header .encabezado_items .items_texto {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 1.2em;
   margin-top: 1rem;
 }
 
 header .encabezado_items .iconos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 10px;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+header .encabezado_items .iconos .wabi {
+  margin-bottom: .7rem;
 }
 
 .cuerpo {
@@ -58,7 +62,7 @@ header .encabezado_items .iconos {
 
 aside {
   width: 25vw;
-  height: 85.5vh;
+  height: 87vh;
   color: wheat;
   background-color: #1d1d1d;
   display: -webkit-box;
@@ -107,16 +111,31 @@ aside .datos {
           align-items: center;
 }
 
+aside .datos .datos_sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
 aside .datos .datos_sociales img {
-  margin: 0 .5rem;
+  width: 2rem;
+  margin: 0 1rem .3rem 0;
 }
 
 section {
   background-image: url(/imagenes/pizza_fondo.jpg);
+  background-position: center;
   background-size: cover;
-  background-position: 74.3vw;
   width: 75vw;
-  height: 85.5vh;
+  height: 87vh;
 }
 
 section .section_contenedor {
@@ -127,11 +146,19 @@ section .section_contenedor {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 400px;
+  margin-top: 43.5vh;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  height: 50%;
 }
 
 section .section_contenedor .section_titulo {
   color: white;
+  font-size: 2em;
+  margin: .3em 0 0 .3em;
 }
 
 section .section_contenedor .section_cards {

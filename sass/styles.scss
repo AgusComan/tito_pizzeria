@@ -11,6 +11,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
+    height: 13vh;
     .encabezado_logo{
         color: wheat;
         font-size: 3rem;
@@ -19,16 +21,18 @@ header{
     .encabezado_items{
         color: wheat;
         margin-right: 2.5rem;
+        display: flex;
+        flex-direction: column;
         .items_texto{
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            font-size: 1.2em;
             margin-top: 1rem;
         }
         .iconos{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 10px;
+            text-align: center;
+            margin-bottom: .5rem;
+            .wabi{
+                margin-bottom: .7rem;
+            }
         }
     }
 }
@@ -39,7 +43,7 @@ header{
 
 aside{
     width: 25vw;
-    height: 85.5vh;
+    height: 87vh;
     color: wheat;
     background-color: rgb(29, 29, 29);
     display: flex;
@@ -70,8 +74,13 @@ aside{
         justify-content: center;
         align-items: center;
         .datos_sociales{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
             img{
-                margin: 0 .5rem;
+                width: 2rem;
+                margin: 0 1rem .3rem 0;
             }
         }
     }
@@ -79,16 +88,23 @@ aside{
 
 section{
     background-image: url(/imagenes/pizza_fondo.jpg);
+    background-position: center;
     background-size: cover;
-    background-position: 74.3vw;
     width: 75vw;
-    height: 85.5vh;
+    height: 87vh;
     .section_contenedor{
         display: flex;
         flex-direction: column;
-        margin-top: 400px;
+        margin-top: 43.5vh;
+        background: rgba( 0, 0, 0, 0.4 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 0.5px );
+        -webkit-backdrop-filter: blur( 0.5px );
+        height: 50%;
         .section_titulo{
             color: white;
+            font-size: 2em;
+            margin: .3em 0 0 .3em;
         }
         .section_cards{
             display: flex;
