@@ -131,7 +131,7 @@ aside .datos .datos_sociales img {
 }
 
 section {
-  background-image: url(/imagenes/pizza_fondo.jpg);
+  background-image: url(../imagenes/pizza_fondo.jpg);
   background-position: center;
   background-size: cover;
   width: 75vw;
