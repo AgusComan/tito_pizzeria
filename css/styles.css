@@ -1,9 +1,15 @@
 /* ASPECTOS DEL INICIO */
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
 }
 
 /*---HEADER---*/
@@ -24,8 +30,9 @@ header {
 
 header .encabezado_logo {
   color: wheat;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-left: 2.5rem;
+  font-family: 'Major Mono Display', monospace;
 }
 
 header .encabezado_items {
@@ -157,7 +164,9 @@ section .section_contenedor {
 
 section .section_contenedor .section_titulo {
   color: white;
+  font-family: 'Major Mono Display', monospace;
   font-size: 2em;
+  text-decoration: overline;
   margin: .3em 0 0 .3em;
 }
 
@@ -181,7 +190,8 @@ section .section_contenedor .section_cards .cards {
 }
 
 section .section_contenedor .section_cards .cards .card_titulo {
-  font-size: 1.5rem;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 1.2rem;
   padding: .5rem;
   text-align: center;
   color: white;
